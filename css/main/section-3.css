@@ -1,0 +1,97 @@
+/* Logo */
+
+.logo-our-projects {
+  width: 100%;
+  height: 63%;
+}
+
+.logo-our-projects .list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0px;
+  padding: 0px 30px 0 30px;
+  top: 35%;
+}
+
+.logo-our-projects .list li {
+  list-style-type: none;
+  width: 97px;
+  height: 100px;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.logo-our-projects .list li img {
+  width: 100%;
+  cursor: pointer;
+  opacity: 0.6; 
+}
+
+/* Info */
+
+.info-our-projects {
+  width: 100%;
+  height: 35%;
+  font-size: 15px;
+}
+
+.info-our-projects .header {
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #1a1a1a;
+}
+
+.info-our-projects .header div:first-child {
+  font-family: yarik-166;
+  margin-right: 5px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.info-our-projects .header div:last-child {
+  font-family: danpro-med;
+  letter-spacing: -0.6px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  font-family: danpro-bold;
+  color: #808080;
+  line-height: 1.1;
+  padding: 0 30px 0 30px;
+}
+
+.footer .contacts {
+  margin: 0px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #555555;
+  font-size: 13px;
+}
+
+.footer .title {
+  margin: 0px;
+  color: #9c9c9c;
+  font-weight: normal;
+}
+
+.footer .info {
+  font-family: danpro-med;
+  color: #1a1a1a;
+}
+
+.footer section {
+  margin-bottom: 8px;
+}
+
+.footer .info p {
+  margin: 0px;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Wexport</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <div class="content">
+                        <div>WESSAR</div>
+                        <img src="images/logo/toppuzzle.svg" alt="" />
+                        <div>О нас</div>
+                    </div>
+                    <div class="rights">
+                        <div>Все права защищены</div>
+                        <div>© ТОО "WESSAR" 2017</div>
+                    </div>
+                </div>
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!"><span></span></a></div>
+                    <div class="menu-toggle">
+                        <img src="images/mini-mount.png" alt="mountain">
+                        <div class="elems">
+                            <div class="logo-text">Wessar</div>
+                            <ul class="nav-list">
+                                <li><a href="#section-1">Главная</a></li>
+                                <li><a href="#section-2">О нас</a></li>
+                                <li><a href="#section-3">Партнеры</a></li>
+                                <li><a href="#section-4">Работы</a></li>
+                                <li><a href="#section-5">Контакты</a></li>
+                            </ul>
+                            <div class="lang">
+                                <div class="lang_kz">qaz</div>
+                                <div class="lang_en">eng</div>
+                                <div class="lang_ru">rus</div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="container" id="fullpage">
+        <div class="section">
+            <div class="ttt">
+                <div class="logo">
+                    <div class="icon">
+                        <img class="top" src="images/logo/logo_n.png" alt="" />
+                        <div class="top-shadow"></div>
+                    </div>
+                    <img class="topline" src="images/logo/toppuzzle.svg" alt="" />
+                    <img class="company-name" src="images/logo/naming.svg" alt="" />
+                    <p class="slogan1">Holdin group chill</p>
+                    <img class="bottomline" src="images/logo/bottompuzzle.svg" alt="" />
+                    <p class="slogan2">Soon everything else well come second</p>
+                </div>
+                <div class="back-mountains">
+                    <img src="images/mini-mount.png" alt="" />
+                    <!-- <img class="mountain3" src="/images/00-01.svg" alt="" />
+                    <img class="mountain2" src="/images/00-02.svg" alt="" />
+                    <img class="mountain1" src="/images/00-03.svg" alt="" /> -->
+                </div>
+
+                <!-- <div class="bottom-description">
+                    <p class="bottom-description__button">узнать больше</p>
+                    <a href="#secondPage" class="move-slider">
+                        <img src="/images/icons/ShivD.svg" alt="" />
+                    </a>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="section two">
+            <div>
+                <div class="video-content">
+                    <div class="play">
+                        <img src="images/play_n.svg" alt="Плей" />
+                        <div class="play-text">Начать просмотр</div>
+                    </div>
+                    <div class="overlay"></div>
+                    <video id="myVideo" muted loop>
+                        <source src="video/mountain.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="about-company">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                    corporis enim harum porro praesentium quaerat quas quidem
+                    reiciendis similique ullam! Aperiam assumenda consequatur
+                    excepturi incidunt iusto, magnam molestias mollitia, non
+                    repudiandae sit temporibus ullam voluptatibus? Ad aliquam,
+                    consequuntur dignissimos esse et excepturi facilis illum nihil
+                    optio porro quam quos sunt veritatis vero vitae. Accusamus
+                </div>
+            </div>
+        </div>
+        <script>
+            var played = false;
+            var video = document.getElementById("myVideo");
+            var playButtonVideo = document.getElementsByClassName('play')[0];
+
+            playButtonVideo.addEventListener('click', function () {
+                willPlay();
+            })
+
+            video.addEventListener("pause", function () {
+                var overlay = document.getElementsByClassName('overlay')[0];
+                overlay.style.display = "block";
+                video.removeAttribute("controls");
+
+                playButtonVideo.lastElementChild.innerText = 'Продолжить просмотр';
+                playButtonVideo.style.display = "block";
+            });
+
+            function willPlay() {
+                video.play();
+                playButtonVideo.style.display = "none";
+                video.setAttribute("controls", "controls");
+                var overlay = document.getElementsByClassName('overlay')[0];
+                overlay.style.display = "none"
+            }
+        </script>
+        <div class="section">
+
+            <div class="logo-our-projects">
+                <ul class="list">
+                    <li class="project"><img id="1" src="images/children/01.svg" alt=""></li>
+                    <li class="project"><img id="2" src="images/children/02.svg" alt=""></li>
+                    <li class="project"><img id="3" src="images/children/03.svg" alt=""></li>
+                    <li class="project"><img id="4" src="images/children/04.svg" alt=""></li>
+                    <li class="project"><img id="5" src="images/children/hover-05.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="info-our-projects">
+                <div class="header">
+                    <div class="main">IT</div>
+                    <div class="additional"> (information technology)</div>
+                </div>
+                <div class="footer">
+                    <section class="contacts">
+                        Контакты
+                    </section>
+
+                    <section class="address">
+                        <h5 class="title">Адрес:
+                        </h5>
+                        <span class="info">
+                            Республика Казахстан, г. Нур-Султан
+                            <br>
+                            ул. Затаевича 28/1, офис 79
+                        </span>
+                    </section>
+
+                    <section class="phone">
+                        <h5 class="title">Телефон:
+                        </h5>
+                        <span class="info">
+                            <p>+7 (702) 696 69 69</p>
+                            <p>+7 (702) 777 79 98</p>
+                        </span>
+                    </section>
+
+                    <section class="email">
+                        <h5 class="title">Электронная почта:
+                        </h5>
+                        <span class="info">
+                            Name@wessar.com
+                        </span>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var projects = document.getElementsByClassName("project");
+            var textField = document.getElementById("texter");
+            var additionalDiv = document.querySelector(
+                ".info-our-projects .header .additional"
+            );
+
+            var textField = document.querySelector(
+                ".info-our-projects .header .main"
+            );
+
+            projects[4].firstChild.style.opacity = 1;
+
+            var txtList = ["media", "analytics", "trading", "finance", "it"];
+
+            for (var i = 0; i < projects.length; i++) {
+                projects[i].onclick = function (event) {
+                    var item = event.target.id;
+
+                    for (var j = 0; j < projects.length; j++) {
+                        projects[j].firstChild.setAttribute("src", `images/children/0${j + 1}.svg`);
+                        projects[j].firstChild.style.opacity = 0.6;
+                    }
+
+                    event.target.setAttribute("src", `images/children/hover-0${item}.png`);
+                    event.target.style.opacity = 1;
+                    textField.innerText = txtList[item - 1];
+
+                    additionalDiv.style.display = 'none';
+                    if (item == 5) {
+                        additionalDiv.style.display = 'block';
+                    }
+                }
+            }
+
+        </script>
+        <div class="section">
+            <ul class="partners">
+                <li class="item"><img src="images/partners/astyk-trans.png" alt=""></li>
+                <li class="item"><img src="images/partners/forteBank.png" alt=""></li>
+                <li class="item"><img src="images/partners/LKGK.png" alt=""></li>
+                <li class="item"><img src="images/partners/MSH.png" alt=""></li>
+                <li class="item"><img src="images/partners/Standard.png" alt=""></li>
+                <li class="item"><img src="images/partners/Tcesna.png" alt=""></li>
+            </ul>
+
+        </div>
+        <div class="section">
+            <div class="ttt">
+                <div class="logo-mini">
+                    <div class="icon">
+                        <img class="top" src="images/logo/logo_n.png" alt="" />
+                        <div class="top-shadow"></div>
+                    </div>
+                    <img class="topline" src="images/logo/toppuzzle.svg" alt="" />
+                    <img class="company-name" src="images/logo/naming.svg" alt="" />
+                    <p class="slogan1">Holdin group chill</p>
+                    <img class="bottomline" src="images/logo/bottompuzzle.svg" alt="" />
+                </div>
+
+                <div class="back-mountains">
+                    <img src="images/mini-mount.png" alt="" />
+                </div>
+                <div class="last-page info-our-projects ">
+                    <div class="last-footer">
+                        <section class="contacts">
+                            Контакты
+                        </section>
+
+                        <section class="address">
+                            <h5 class="title">Адрес:
+                            </h5>
+                            <span class="info">
+                                Республика Казахстан, г. Нур-Султан
+                                <br>
+                                ул. Затаевича 28/1, офис 79
+                            </span>
+                        </section>
+
+                        <section class="phone">
+                            <h5 class="title">Телефон:
+                            </h5>
+                            <span class="info">
+
+                                <p>+7 (702) 696 69 69</p>
+                                <p>+7 (702) 777 79 98</p>
+                            </span>
+                        </section>
+
+                        <section class="email">
+                            <h5 class="title">Электронная почта:
+                            </h5>
+                            <span class="info">
+                                Name@wessar.com
+                            </span>
+                        </section>
+
+                        <section class="last-rights">
+                            <div>Все права защищены</div>
+                            <div>© ТОО "WESSAR" 2017</div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- 
+                <footer class="container">
+                    <p>Все права защищены</p>
+                    <p>© ТОО "WESSAR" 2017</p>
+                </footer> -->
+            </div>
+        </div>
+    </main>
+</body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
+<script src="js/fullPageSettings.js">
+</script>
+
+<!-- Нужно переписать на VanillaJS-->
+<script>
+    $('.dropdown').click(function (e) {
+        e.stopPropagation();
+        $('.nav-dropdown').toggle();
+
+    });
+
+    $('html').click(function () {
+        $('.nav-dropdown').hide();
+    })
+
+    $('#nav-toggle').on('click', function () {
+        this.classList.toggle('active');
+
+    });
+
+    $("#nav-toggle").click(function () {
+        $(".menu-toggle").toggle();
+
+        $('body').addClass('stop-scrolling')
+        $('body').bind('touchmove', function (e) { e.preventDefault() })
+
+        $(".brand .content").css('visibility', function (i, visibility) {
+            return (visibility == 'hidden') ? 'visible' : 'hidden';
+        });
+
+        $(".brand .rights").css('display', function (i, display) {
+            return (display == 'none') ? 'block' : 'none';
+        });
+    });
+
+    $(".nav-list").click(function () {
+        $(".menu-toggle").toggle();
+    });
+
+</script>
+
+</html>

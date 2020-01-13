@@ -1,0 +1,98 @@
+@import url("./css/header.css");
+
+@import url("./css/main.css");
+@import url("./css/main/section-1.css");
+@import url("./css/main/section-2.css");
+@import url("./css/main/section-3.css");
+@import url("./css/main/section-4.css");
+@import url("./css/main/section-5.css");
+
+@import url("./css/footer.css");
+
+@font-face {
+  font-family: COMFORTAA-REGULAR;
+  src: url("/fonts/comfortaa-regular/COMFORTAA-REGULAR.eot");
+  src: url("/fonts/comfortaa-regular/COMFORTAA-REGULAR.ttf");
+  src: url("/fonts/comfortaa-regular/COMFORTAA-REGULAR.woff2") format("woff2");
+  src: url("/fonts/comfortaa-regular/COMFORTAA-REGULAR.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: COMFORTAA-BOLD;
+  src: url("/fonts/comfortaa-bold/COMFORTAA-BOLD.eot");
+  src: url("/fonts/comfortaa-bold/COMFORTAA-BOLD.ttf");
+  src: url("/fonts/comfortaa-bold/COMFORTAA-BOLD.woff2") format("woff2");
+  src: url("/fonts/comfortaa-bold/COMFORTAA-BOLD.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: COMFORTAA-LIGHT;
+  src: url("fonts/comfortaa-light/COMFORTAA-LIGHT.eot");
+  src: url("fonts/comfortaa-light/COMFORTAA-LIGHT.ttf");
+  src: url("fonts/comfortaa-light/COMFORTAA-LIGHT.woff2") format("woff2");
+  src: url("fonts/comfortaa-light/COMFORTAA-LIGHT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: danpro-bold;
+  src: url("fonts/danpro/DANPro-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: danpro-med;
+  src: url("fonts/danpro/DANPro-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: yarik-166;
+  src: url("fonts/16683.TTF");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  color: #1a1a1a;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 414px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 415px) and (max-width: 960px) {
+  /* body {
+    background-color: #f5e28e;
+  } */
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #ffffff;
+  }
+}

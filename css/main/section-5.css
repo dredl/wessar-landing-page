@@ -1,0 +1,124 @@
+.last-page {
+  position: absolute;
+  top: 325px;
+  z-index: 55;
+}
+
+.logo-mini {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 76%;
+  text-align: center;
+  position: absolute;
+  top: 105px;
+  z-index: 998;
+}
+
+.logo-mini .icon {
+  width: 74px;
+  height: 74px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 9px;
+}
+
+.logo-mini .icon .top {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: 0;
+}
+
+.logo-mini .icon .top-shadow {
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-box-shadow: 0px 47px 40px -40px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 47px 40px -40px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 47px 40px -40px rgba(0, 0, 0, 0.8);
+}
+
+.logo-mini .topline {
+  width: 86%;
+  margin: 20px 0 20px 0;
+  margin: auto;
+}
+
+.logo-mini .company-name {
+  margin: auto;
+  width: 50%;
+  margin-top: 9px;
+}
+
+.logo-mini .bottomline {
+  width: 89%;
+  margin: auto;
+  height: 3px;
+  margin-top: 6px;
+}
+
+.logo-mini .slogan1 {
+  margin: 3px;
+  font-size: 7px;
+  font-family: danpro-med;
+  text-transform: uppercase;
+  color: #808080;
+  line-height: 1.1;
+}
+
+
+.last-footer {
+  font-family: danpro-bold;
+  color: #808080;
+  line-height: 1.1;
+  padding: 0 30px 0 30px;
+}
+
+.last-footer .contacts {
+  margin: 0px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #555555;
+  font-size: 14px;
+}
+
+.last-footer .title {
+  margin: 0px;
+  color: #9c9c9c;
+  font-weight: normal;
+  font-family: danpro-med;
+  padding-bottom: 2px;
+}
+
+.last-footer .info {
+  font-family: danpro-med;
+  color: #1a1a1a;
+  font-size: 17px;
+}
+
+.last-footer section {
+  margin-bottom: 12px;
+}
+
+.last-footer .info p {
+  margin: 0px;
+}
+
+.last-footer .last-rights {
+  margin: auto;
+  text-align: center;
+  width: 135px;
+  height: 45px;
+  font-size: 11px;
+  color: #b3b3b3;
+  font-family: danpro-med;
+  margin-top: 64px;
+}
